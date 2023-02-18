@@ -5,6 +5,7 @@ import Header from "./Header.js";
 
 const App = () => {
   const [day, setDay] = useState(0);
+  // Nested array taking a lot of space
   const [lists, setLists] = useState([
     [
       {
@@ -107,7 +108,7 @@ const App = () => {
   ]);
 
   const addTask = (id, input) => {
-    //Copies the lists into new array, check what day is in state and adds
+    //Copies the lists into new array, checks what day is in the state and adds
     const updatedLists = [...lists]; //the input into the list with corresponding id
     updatedLists[day] = updatedLists[day].map((list) => {
       if (list.id === id) {
@@ -122,6 +123,7 @@ const App = () => {
   };
 
   const removeTask = (taskId, listId) => {
+    // Same idea as in addTask but splices one value from the lists array
     const updatedLists = [...lists];
     updatedLists[day] = updatedLists[day].map((list) => {
       if (list.id === listId) {

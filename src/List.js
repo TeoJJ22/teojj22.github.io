@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import Text from "./Text";
 
 const List = ({ list, addTask, removeTask }) => {
-  const [input, setInput] = useState("");
+  const [input, setInput] = useState(""); //tracks the input field in React state
 
   const handleInputChange = (e) => {
     setInput(e.target.value);
@@ -14,7 +14,7 @@ const List = ({ list, addTask, removeTask }) => {
 
   const addTaskClick = () => {
     if (input != "") {
-      addTask(list.id, input);
+      addTask(list.id, input); //Only adds a task if the input is not empty
       setInput("");
     }
     setInput("");
