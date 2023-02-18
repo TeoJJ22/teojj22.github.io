@@ -37,7 +37,7 @@ const App = () => {
     [
       {
         id: 0,
-        tasks: ["wednesday"],
+        tasks: [],
       },
       {
         id: 1,
@@ -51,7 +51,7 @@ const App = () => {
     [
       {
         id: 0,
-        tasks: ["thursday"],
+        tasks: [],
       },
       {
         id: 1,
@@ -65,7 +65,7 @@ const App = () => {
     [
       {
         id: 0,
-        tasks: ["friday"],
+        tasks: [],
       },
       {
         id: 1,
@@ -79,7 +79,7 @@ const App = () => {
     [
       {
         id: 0,
-        tasks: ["saturday"],
+        tasks: [],
       },
       {
         id: 1,
@@ -93,7 +93,7 @@ const App = () => {
     [
       {
         id: 0,
-        tasks: ["sunday"],
+        tasks: [],
       },
       {
         id: 1,
