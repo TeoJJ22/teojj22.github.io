@@ -1,5 +1,3 @@
-import React, { useState } from "react";
-
 const Text = ({ id, task, handleRemove }) => {
   const onRemoveClick = () => {
     handleRemove(id);

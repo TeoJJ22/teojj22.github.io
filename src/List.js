@@ -13,7 +13,7 @@ const List = ({ list, addTask, removeTask }) => {
   };
 
   const addTaskClick = () => {
-    if (input != "") {
+    if (input !== "") {
       addTask(list.id, input); //Only adds a task if the input is not empty
       setInput("");
     }
@@ -23,9 +23,9 @@ const List = ({ list, addTask, removeTask }) => {
   return (
     <div>
       <h3>
-        {list.id == 0
+        {list.id === 0
           ? "Tasks ~ 5 min"
-          : list.id == 1
+          : list.id === 1
           ? "Tasks 10 min+"
           : "Projects 30 min+"}
       </h3>
